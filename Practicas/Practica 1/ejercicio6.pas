@@ -27,7 +27,6 @@ begin
     cantidad_alumnos:=0;
     cantidad_alumnos_65:=0;
     cantidad_alumnos_destacados:=0;
-    cantidad_alumnos_destacados:=0;
     while ( legajo <> -1 ) do  begin
         WriteLn('Ingrese promedio');
         ReadLn(promedio);
