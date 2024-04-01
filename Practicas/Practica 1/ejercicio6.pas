@@ -40,7 +40,7 @@ begin
         ReadLn(legajo);
     end;
      if( cantidad_alumnos_destacados > 0 ) then
-            porcentajea_alumnos_destacados:= ( cantidad_alumnos_destacados/cantidad_alumnos ) * 100
+            porcentajea_alumnos_destacados:= ( cantidad_alumnos_destacados/cantidad_alumnos ) * 100;
     WriteLn('La cantidad de alumnos leidos son: ', cantidad_alumnos);
     WriteLn('La cantidad de laumnos con promedio mayor a 6.5 son: ', cantidad_alumnos_65);
     WriteLn('El porcentaje de alumnos destacados es de : ', porcentajea_alumnos_destacados:0:2, '%')
