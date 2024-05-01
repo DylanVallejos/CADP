@@ -7,10 +7,11 @@ procedure actualizar_nro(num:integer; var numero_par_alto:Integer);
 begin
 while( num >= 0 ) do begin   
   if(num MOD 2 = 0)then begin
-    numero_par_alto:=num;
+    if(numero_par_alto > num)then
+      numero_par_alto:=num;
   end;
-     WriteLn('Ingrese un numero');
-      ReadLn(num);
+    WriteLn('Ingrese un numero');
+    ReadLn(num);
 end;
 WriteLn('el numero par mas alto es ',numero_par_alto);
 end;
@@ -18,6 +19,7 @@ var
 num:Integer;
 numero_par_alto:Integer;
 begin
+numero_par_alto:=-1;
 WriteLn('Ingrese un numero');
 ReadLn(num);
 actualizar_nro(num,numero_par_alto);
